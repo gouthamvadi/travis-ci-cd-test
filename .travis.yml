@@ -1,0 +1,8 @@
+language: java
+jdk:
+  - openjdk20
+
+script: ./mvnw clean install
+
+notifications:
+  email: gouthamvadivel.work@gmail.com
