@@ -23,5 +23,9 @@ public class DemoSpringBootApplicationTests {
     public void testWelcome() throws Exception {
         mockMvc.perform(get("/hello")).andExpect(status().isOk());
     }
+    @Test
+    public void testWelcomeFailure() throws Exception {
+        mockMvc.perform(get("/")).andExpect(status().isOk());
+    }
 
 }
