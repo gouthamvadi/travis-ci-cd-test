@@ -13,6 +13,11 @@ public class DemoSpringBootApplication {
     public String welcome(){
         return "Hello..! Welcome";
     }
+
+    @GetMapping("/home")
+    public String home(){
+        return "Hello..! Welcome Home";
+    }
     public static void main(String[] args) {
         SpringApplication.run(DemoSpringBootApplication.class, args);
     }
